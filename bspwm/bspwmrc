@@ -1,0 +1,33 @@
+#! /bin/sh
+
+sxhkd &
+xrandr --output eDP --primary --mode 1920x1080 --rotate normal --output HDMI-1-0 --mode 1920x1080 --rotate normal --same-as eDP &
+bspc monitor eDP -d I II III IV V VI VII VIII &
+bspc monitor HDMI-0 -d 6 7 8 9 0 &
+bspc config window_gap 15 &
+
+bspc config split_ratio 0.52 &
+bspc config borderless_monocle true &
+bspc config single_monocle = true &
+bspc config gapless_monocle true &
+bspc config pointer_motion_interval 5 &
+bspc config border_width 0 &
+
+xsetroot -cursor_name left_ptr &
+
+#Autostart
+feh --bg-fill ~/Downloads/wallpaperflare.com_wallpaper\(2\).jpg &
+picom --config $HOME/.config/picom/picom.conf &
+polybar -c ~/.config/polybar/shapes/config.ini & 
+polybar -c ~/.config/polybar/cuts/config.ini top &
+
+#polybar Main &
+#polybar cpu &
+#polybar volume &
+#polybar date &
+#polybar filesystem &
+#polybar memory &
+#polybar workspaces &
+
+systemctl start bluetooth.service &
+dunst -c ~/.config/dunst/dunstrc &
