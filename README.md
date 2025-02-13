@@ -8,10 +8,10 @@
 
 ## [*] Instalation:
 
-###### git clone https://github.com/Unknown8003/bspwm-dotfiles/
-###### cd bspwm-dotfiles
-###### chmod +x install.sh
-###### ./install.sh
-
+``git clone https://github.com/Unknown8003/bspwm-dotfiles/
+cd bspwm-dotfiles
+chmod +x install.sh
+./install.sh
+``
 ## [!] Warning
 ### This bspwm dotfiles are made originally for Arch Linux, so if you use debian, you may need to re-configure some files :)
