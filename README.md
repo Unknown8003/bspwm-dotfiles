@@ -10,5 +10,7 @@
 
 There is no installation script, but I'll add it later :))
 
-## [ ! ] Warning
+>[!warning]
+>This repository is outdated and may cause problems. If you manage to resolve them, I hope you enjoy the environment, but you have been warned :)
+
 ### This bspwm dotfiles are made originally for Arch Linux, so if you use debian, you may need to re-configure some files :)
